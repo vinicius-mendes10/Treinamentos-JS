@@ -34,11 +34,24 @@
 // }else{
 //     console.log('Acarne esta cara');
 // }
-let isMember = true;
+// let isMember = true;
 
-let shipping = isMember ? 2 : 10;
-console.log('frete:' + shipping);
+// let shipping = isMember ? 2 : 10;
+// console.log('frete:' + shipping);
 
-let age = 24;
-let isAdult = (age >= 18 ? 'Adulto' : 'Nåo e adulto');
-console.log(isAdult);
+// let age = 24;
+// let isAdult = (age >= 18 ? 'Adulto' : 'Nåo e adulto');
+// console.log(isAdult);
+let cars = "Honda Civic";
+console.log("Modelo:" + cars);
+switch (cars) {
+  case "Siena":
+    console.log("Seu carro e fiat");
+    break;
+  case "Honda Civic":
+    console.log("Seu carro e um honda");
+  case "Tucson":
+    console.log("Seu carro e um hyundai");
+    default:
+        console.log('Nenhum carro');
+}
