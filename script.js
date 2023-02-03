@@ -101,26 +101,41 @@
 //   let x = 40;
 //   let y = 10;
 //   let pct = calcPct(x, y);
-// console.log(`${pct}% de ${x} e ${y}`);
-function calcularImovel( metragem, quartos){
-  let m2 = 3000;
-  let preco = 0;
+// // console.log(`${pct}% de ${x} e ${y}`);
+// function calcularImovel( metragem, quartos){
+//   let m2 = 3000;
+//   let preco = 0;
 
-  switch(quartos){
-    case 1:
-      default:
-        preco = metragem * m2;
-        break;
-        case 2:
-          preco = metragem * (m2 * 1.2);
-          break;
-          case 3:
-            preco = metragem * (m2 * 1.5);
-            break;
+//   switch(quartos){
+//     case 1:
+//       default:
+//         preco = metragem * m2;
+//         break;
+//         case 2:
+//           preco = metragem * (m2 * 1.2);
+//           break;
+//           case 3:
+//             preco = metragem * (m2 * 1.5);
+//             break;
+//   }
+//   return preco;
+// }
+// let metragem = 123;
+// let quartos = 3;
+// let preco = calcularImovel(metragem, quartos);
+// console.log(`Acasa custa R$ ${preco}`);
+function validar (usuario, senha){
+  if (usuario === 'Pedro' && senha ==='123'){
+    return true;
+  } else {
+    return false;
   }
-  return preco;
 }
-let metragem = 123;
-let quartos = 3;
-let preco = calcularImovel(metragem, quartos);
-console.log(`Acasa custa R$ ${preco}`);
+let usuario = 'Pedro';
+let senha = '123';
+let validacao = validar (usuario, senha);
+if(validacao){
+  console.log(`Acesso concedido`);
+}else{
+  console.log(`Acesso negado`);
+}
