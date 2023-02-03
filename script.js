@@ -75,8 +75,52 @@
 // nomeCompleto('Lazaro','Ferreira');
 
 //entrada -> processamento -> saida
-function nomeCompleto(nome, sobrenome) {
-  return `${nome} ${sobrenome}`;
+// function nomeCompleto(nome, sobrenome) {
+//   return `${nome} ${sobrenome}`;
+// }
+// let completo = nomeCompleto("vinicius", "Ferreira");
+// console.log("cpmleto:" + completo);
+// function maiorDeIdade(idade){
+//   if(idade >= 18){
+//     return true;
+//   }else{
+//     return false;
+//   }
+// }
+// let idade = 65;
+// let verificacao = maiorDeIdade(idade);
+
+// if(verificacao){
+//   console.log(`E maior de idade`);
+// }else{
+//   console.log(`E menor de idade`);
+// }
+// function calcPct (x , y){
+//   return (y / x) * 100;
+// }
+//   let x = 40;
+//   let y = 10;
+//   let pct = calcPct(x, y);
+// console.log(`${pct}% de ${x} e ${y}`);
+function calcularImovel( metragem, quartos){
+  let m2 = 3000;
+  let preco = 0;
+
+  switch(quartos){
+    case 1:
+      default:
+        preco = metragem * m2;
+        break;
+        case 2:
+          preco = metragem * (m2 * 1.2);
+          break;
+          case 3:
+            preco = metragem * (m2 * 1.5);
+            break;
+  }
+  return preco;
 }
-let completo = nomeCompleto("vinicius", "Ferreira");
-console.log("cpmleto:" + completo);
+let metragem = 123;
+let quartos = 3;
+let preco = calcularImovel(metragem, quartos);
+console.log(`Acasa custa R$ ${preco}`);
