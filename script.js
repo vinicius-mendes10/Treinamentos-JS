@@ -124,18 +124,31 @@
 // let quartos = 3;
 // let preco = calcularImovel(metragem, quartos);
 // console.log(`Acasa custa R$ ${preco}`);
-function validar (usuario, senha){
-  if (usuario === 'Pedro' && senha ==='123'){
-    return true;
-  } else {
-    return false;
-  }
-}
-let usuario = 'Pedro';
-let senha = '123';
-let validacao = validar (usuario, senha);
-if(validacao){
-  console.log(`Acesso concedido`);
-}else{
-  console.log(`Acesso negado`);
-}
+// function validar (usuario, senha){
+//   if (usuario === 'Pedro' && senha ==='123'){
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// let usuario = 'Pedro';
+// let senha = '123';
+// let validacao = validar (usuario, senha);
+// if(validacao){
+//   console.log(`Acesso concedido`);
+// }else{
+//   console.log(`Acesso negado`);
+// }
+let carros = ['BMW', 'Ferrari', 'Mercedes'];
+let x = 1;
+console.log('1.' +carros[x])
+
+carros[1] = 'Audi';
+console.log('2. lista com audi:');
+console.log(carros);
+
+carros.push('volvo');
+console.log('3. lista com volvo:');
+console.log(carros);
+
+console.log(carros.length);
